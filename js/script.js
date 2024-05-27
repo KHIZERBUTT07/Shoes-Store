@@ -1,5 +1,6 @@
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
+var cartBtn = document.getElementById('cart');
 
 menu.onclick =() =>{
     menu.classList.toggle('fa-times');
@@ -42,3 +43,7 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
         document.querySelector('.big-image-3').src = src;
     });
 });
+
+cartBtn.addEventListener('click',function(){
+    alert("added")
+})
